@@ -123,3 +123,35 @@ class SolidRhombus{
     }
 }
 
+class NumberPyramid{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++){
+            for (int j = 1; j < 2*n; j++){
+                if (j >= n-i && j <= n+i && (i+j)%2 == 1){
+                    System.out.print(i+1);
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+class DiamondPattern{
+    public static void main(String[] args){
+        int n =4;
+        for (int i = 1; i <= 2*n; i++){
+            for (int j = 1; j <= 2*n; j++){ 
+                if ((i<=n && j<=n-i)||(i>n && j<=i-n)){
+                    System.out.print("  ");
+                } else if ((i<=n && j>=n+1-i && j<=n-1+i)||(i>n && j>=2*i-1-4*n && j<=3*n-i+1)){
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
