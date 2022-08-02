@@ -41,3 +41,49 @@ class HollowRectangleSoln{
         }
     }
 }
+
+//Goes as far as 181 astriks on my current terminal screen then 182nd is in new line
+class InvertedRotatedHalfPyramid{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=n-i-1;j>=1;j--){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i+1;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+class NumericalHalfPyramid{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+
+class FloydsTriangle{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int counter = 1;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(counter);
+                System.out.print(" ");
+                counter++;
+            }
+            System.out.println();
+        }
+    }
+}
