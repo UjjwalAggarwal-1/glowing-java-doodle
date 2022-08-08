@@ -1,5 +1,5 @@
-import Bank.*;
-
+import bank.*;
+ 
 class Pen {
     String color;
     String type;
@@ -51,7 +51,6 @@ public class OOPS {
         s2.printName();
 
         //packages ka example
-
-       Account acc1 = new Account();
+        System.out.println(bank.Bank.class);
     }
 }

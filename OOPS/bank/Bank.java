@@ -1,4 +1,4 @@
-package Bank;
+package bank;
 
 class Account{
     public String name;
