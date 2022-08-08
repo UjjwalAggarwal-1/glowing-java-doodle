@@ -51,6 +51,8 @@ public class OOPS {
         s2.printName();
 
         //packages ka example
-        System.out.println(bank.Bank.class);
+        // Account acc1 = new Account();
+        // acc1.name = "ujjwal";
+
     }
 }
